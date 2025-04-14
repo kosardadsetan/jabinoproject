@@ -245,33 +245,106 @@ body {
   
   /* استایل درباره ما */
   .about-section {
-  body {
+/* تنظیمات پایه */
+body {
     font-family: Vazir, sans-serif;
-    background-color: #f4f1e8;
+    background-color: #f3efe4;
     color: #2f3e34;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
 }
 
-.section-title {
-    color: #215c4b;
-    font-weight: bold;
-    margin-bottom: 20px;
+/* هدر */
+header {
+    background: linear-gradient(to left, #0b3e27, #1e6a4e);
+    color: white;
+    padding: 2rem 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* نوار تزئینی ایرانی */
 .iran-pattern {
     background-image: url('https://cdn.buttercms.com/8wEQQKqRTeK4ON6sMk3C');
+    background-repeat: repeat-x;
     background-size: contain;
-    height: 20px;
+    height: 25px;
 }
 
+/* کارت اصلی درباره ما */
 .about-card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    background-color: #fffefa;
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin-top: 2rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
 }
-  }
-  
+
+.about-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* تیتر بخش‌ها */
+.section-title {
+    color: #156149;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #d89c25;
+    border-radius: 4px;
+}
+
+/* لیست ارزش‌ها */
+.about-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.about-card ul li {
+    position: relative;
+    padding-right: 25px;
+    margin-bottom: 12px;
+}
+
+.about-card ul li::before {
+    content: "♦️";
+    position: absolute;
+    right: 0;
+    color: #d89c25;
+}
+
+/* فوتر */
+footer {
+    background-color: #0b3e27;
+    color: #e6e6e6;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 4rem;
+    font-size: 0.95rem;
+}
+}
   .about-section h2 {
     font-size: 36px;
     color: #007bff;
