@@ -245,11 +245,31 @@ body {
   
   /* استایل درباره ما */
   .about-section {
-    text-align: center;
-    background-color: #ffffff;
-    padding: 50px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  body {
+    font-family: Vazir, sans-serif;
+    background-color: #f4f1e8;
+    color: #2f3e34;
+}
+
+.section-title {
+    color: #215c4b;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.iran-pattern {
+    background-image: url('https://cdn.buttercms.com/8wEQQKqRTeK4ON6sMk3C');
+    background-size: contain;
+    height: 20px;
+}
+
+.about-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
   }
   
   .about-section h2 {
