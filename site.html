@@ -11,10 +11,14 @@
   <link rel="icon" href="user/img/logo2.png">
 </head>
 <body>
+  <!--لودینگ صفحه-->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
 <!-- بخش بک‌گراند بالای صفحه -->
- <div class="hero-header position-relative" style="background-image: url('user/img/back.webp'); background-size: cover; background-position: center; height: 400px;">
+ <div class="hero-header " style="background-image: url('user/img/back.webp'); background-size: cover; background-position: center; height: 400px;">
   <!-- فضای خالی برای navbar -->
-  <div style="height: 70px;"></div>
+  <div style="height: 60px;"></div>
  </div>
  <!-- جدیدترین فرصت‌های شغلی (اسلاید افقی) -->
 <div class="container my-5 position-relative">
@@ -57,6 +61,24 @@
         <h5 class="card-title">مدیر پروژه</h5>
         <p class="text-muted mb-1">شرکت راهکار - شیراز</p>
         <p>تجربه مدیریت تیم‌های نرم‌افزاری و چابک</p>
+        <a href="#" class="btn btn-outline-primary btn-sm mt-2">مشاهده جزئیات</a>
+      </div>
+    </div>
+        <!-- کارت 4 -->
+        <div class="card flex-shrink-0 me-3" style="min-width: 300px; background-color: rgba(255,255,255,0.9);">
+          <div class="card-body">
+            <h5 class="card-title">حسابدار ارشد</h5>
+            <p class="text-muted mb-1">شرکت حساب یار نوین  - تهران</p>
+            <p>آشنایی با قوانین مالیات و بیمه</p>
+            <a href="#" class="btn btn-outline-primary btn-sm mt-2">مشاهده جزئیات</a>
+          </div>
+        </div>
+            <!-- کارت 5 -->
+    <div class="card flex-shrink-0 me-3" style="min-width: 300px; background-color: rgba(255,255,255,0.9);">
+      <div class="card-body">
+        <h5 class="card-title">کارشناس فروش و بازاریابی</h5>
+        <p class="text-muted mb-1">شرکت سامانه تجارت پارس-اصفهان</p>
+        <p>فن بیان قوی و توانایی مذاکره</p>
         <a href="#" class="btn btn-outline-primary btn-sm mt-2">مشاهده جزئیات</a>
       </div>
     </div>
@@ -107,6 +129,8 @@
           <li class="nav-item"><a class="nav-link" href="user/submit-project.html">ثبت آگهی</a></li>
           <li class="nav-item"><a class="nav-link" href="user/archive.html">مشاغل</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html">پنل مدیریت</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">بلاگ</a></li>
+
 
         </ul>
       </div>
@@ -233,8 +257,8 @@
   <section class="services py-5">
     <div class="container text-center">
         <h2 class="mb-4">دسته بندی خدمات</h2>
-        <div class="row g-4">
-            <div class="col-md-3 col-sm-6">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
               <a href="user/translation.html" class="text-decoration-none text-dark">               
                  <div class="box p-3 shadow-sm rounded hover-shadow bg-opacity-75">
                 <i class="bi bi-translate fs-1 text-primary"></i>
@@ -242,48 +266,62 @@
                 <p class="text-muted">کارهای مهم خود را با آسایش به دستیار مجازی بسپارید.</p>
             </div></a>
             </div>
-            <div class="col-md-3 col-lg-6">
+            <div class="col">
                 <div class="box p-3 shadow-sm rounded bg-opacity-75">
                     <i class="bi bi-file-earmark-text fs-1 text-success"></i>
                     <h5 class="mt-2">تولید محتوا</h5>
                     <p class="text-muted">نوشتن محتواهای جذاب و مناسب برای وبسایت ها و شبکه های اجتماعی</p>
                 </div>
             </div>
-            <div class="col-md-3 col-lg-6">
+            <div class="col">
                 <div class="box p-3 shadow-sm rounded bg-opacity-75">
                     <i class="bi bi-laptop fs-1 text-warning"></i>
                     <h5 class="mt-2">طراحی سایت</h5>
                     <p class="text-muted">برای کسب و کار خود در اینترنت یک وبسایت بسازید تا معروف شوید.</p>
                 </div>
             </div>
-            <div class="col-md-3 col-lg-6">
+            <div class="col">
               <div class="box p-3 shadow-sm rounded bg-opacity-75">
                   <i class="bi bi-briefcase fs-1 text-warning"></i>
                   <h5 class="mt-2">مشاوره کسب و کار</h5>
                   <p class="text-muted">برای کسب و کار خود در اینترنت یک وبسایت بسازید تا معروف شوید.</p>
               </div>
           </div>
-          <div class="col-md-3 col-lg-6">
+          <div class="col">
             <div class="box p-3 shadow-sm rounded bg-opacity-75">
                 <i class="bi bi-camera fs-1 text-warning"></i>
                 <h5 class="mt-2">عکاسی حرفه ای</h5>
                 <p class="text-muted">برای کسب و کار خود در اینترنت یک وبسایت بسازید تا معروف شوید.</p>
             </div>
         </div>
-            <div class="col-md-3 col-lg-6">
+            <div class="col">
                 <div class="box p-3 shadow-sm rounded bg-opacity-75">
                     <i class="bi bi-code-slash fs-1 text-danger"></i>
                     <h5 class="mt-2">برنامه نویسی</h5>
                     <p class="text-muted">برای کسب و کار خود نرم افزار یا اپلیکیشن سقارش دهید تا فروشتان چند برابر شود.</p>
                 </div>
             </div>
-            <div class="col-md-3 col-lg-6">
+            <div class="col">
               <div class="box p-3 shadow-sm rounded bg-opacity-75">
                 <i class="bi bi-megaphone fs-1 text-danger"></i>
                 <h5 class="mt-2">بازاریابی دیجیتال</h5>
                 <p class="text-muted">برای کسب و کار خود نرم افزار یا اپلیکیشن سقارش دهید تا فروشتان چند برابر شود.</p>
         </div>
           </div>
+          <div class="col">
+            <div class="box p-3 shadow-sm rounded h-100 bg-opacity-75">
+              <i class="bi bi-palette fs-1 text-purple" style="color: purple;"></i>
+              <h5 class="mt-2">طراحی گرافیک</h5>
+              <p class="text-muted">طراحی لوگو،پوستر،کارت ویزیت و عناصر بصری حرفه ای برای کسب و کار شما.</p>
+      </div>
+        </div>
+        <div class="col">
+          <div class="box p-3 shadow-sm rounded bg-opacity-75">
+            <i class="bi bi-keyboard fs-1 text-secondary"></i>
+            <h5 class="mt-2">تایپ و ورود داده</h5>
+            <p class="text-muted">خدمات تایپ سریع،تبدیل pdfبه ورد و ورود داده های دقیق برای کسب و کار.</p>
+    </div>
+      </div>
   </section>
   <!-- نحوه برونسپاری پروژه‌ها -->
 <section class="py-5 bg-light">
@@ -435,5 +473,11 @@
   }
 </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      const preloader = document.getElementById('preloader');
+      preloader.style.display = 'none';
+    });
+  </script>
 </body>
 </html>

@@ -7,7 +7,32 @@ body {
     padding: 0;
     padding-top: 70px;
     height: 100%;
-    background-color: #ffffffee; /* خاکی */
+    background-color: #ffffffee; 
+}
+/*loader*/
+#preloader {
+  position: fixed;
+  inset: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ccc;
+  border-top: 6px solid #007bff; /* رنگ آبی بوت‌استرپ */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 /*header*/
 .hero-header {
@@ -15,19 +40,19 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh; /* یا مثلاً 80vh */
+  height: 100px; 
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
 }
 .banner-img{
-  width: 300%;
-  max-height: 500px;
+  width: 100%;
+  height: auto;
   display: block;
   object-fit: cover;
-  margin: 0 auto;
-  padding: 0 150px;
-  margin-top: 40px;
+  margin: 60px auto 0 auto;
+  margin-top: 60px;
 }
 
 
@@ -75,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-toggler-icon {
-    background-color: #fcefc7ee;
+    background-color: #ffffffee;
 }
 
 /* جعبه جستجو */
@@ -269,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
 /*استایل دکمه ها*/
 .btn-searach{
   background-color: #1b5e20;
-  color: #fcefc7ee;
+  color: #ffffffee;
   border: 1px ;
   transition: 0.3s;
 }
@@ -277,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #2e7d32;
 }
 .btn-register{
-  background-color: #fcefc7ee;
+  background-color: #ffffffee;
   color: #1b5e20;
   transition: 0.3s;
   border: 1px solid;
@@ -286,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ffebb0ee;
 }
 .btn-login{
-  background-color: #fcefc7ee;
+  background-color: #ffffffee;
   color: #1b5e20;
   transition: 0.3s;
   border: 1px solid #5a7d4e;
@@ -298,7 +323,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #5a7d4e ;
 }
 .btn-site{
-  background-color: #fcefc7ee;
+  background-color: #ffffffee;
   color: #1b5e20;
   transition: 0.3s;
   border: 1px solid #5a7d4e;
@@ -316,3 +341,4 @@ h1, h2, h3, h4, h5, h6 {
   height:auto;
   opacity:0.8;
 }
+
