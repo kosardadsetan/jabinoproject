@@ -20,6 +20,22 @@
   <!-- فضای خالی برای navbar -->
   <div style="height: 60px;"></div>
  </div>
+ <!-- مودال خوش‌آمدگویی -->
+<div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header border-0">
+        <h5 class="modal-title w-100" id="welcomeLabel">به جابینو خوش آمدید!</h5>
+      </div>
+      <div class="modal-body">
+        خوشحالیم که اینجایی. از امکانات سایت استفاده کن و شغل مورد علاقت رو پیدا کن.
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">باشه</button>
+      </div>
+    </div>
+  </div>
+</div>
  <!-- جدیدترین فرصت‌های شغلی (اسلاید افقی) -->
 <div class="container my-5 position-relative">
   <div class="d-flex justify-content-between align-items-center mb-3">
@@ -311,6 +327,7 @@
           <div class="col">
             <div class="box p-3 shadow-sm rounded h-100 bg-opacity-75">
               <i class="bi bi-palette fs-1 text-purple" style="color: purple;"></i>
+              <a href="user/404.html" class="text-decoration-none text-dark"> 
               <h5 class="mt-2">طراحی گرافیک</h5>
               <p class="text-muted">طراحی لوگو،پوستر،کارت ویزیت و عناصر بصری حرفه ای برای کسب و کار شما.</p>
       </div>
@@ -456,8 +473,34 @@
         </div>
       
   </footer>
+  <!-- دکمه -->
+<button onclick="scrollToTop()" id="scrollBtn" class="btn btn-primary position-fixed bottom-0 end-0 m-3" style="display: none;">↑</button>
+
+
     </div>
+
 <!--کدهای جاوا-->
+<script>
+  window.addEventListener('load', function () {
+    var welcomeModal = new bootstrap.Modal(document.getElementById('welcomeModal'));
+    welcomeModal.show();
+  });
+</script>
+<script>
+  const scrollBtn = document.getElementById("scrollBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  };
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
 <script>
   function scrollJobs(direction) {
     const slider = document.getElementById('jobSlider');

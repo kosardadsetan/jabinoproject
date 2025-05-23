@@ -73,11 +73,30 @@
         <label class="form-label">تأیید رمز عبور</label>
         <input type="password" class="form-control" placeholder="******">
       </div>
-      <button type="submit" class="btn btn-primary w-100 mt-3">ثبت‌نام</button>
+      <button type="submit" class="btn btn-primary w-100 mt-3" id="registerbtn">ثبت‌نام</button>
       <p class="text-center mt-3 text-muted">حساب دارید؟ <a href="#">وارد شوید</a></p>
+
+
+<!-- نوار اعلان -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="registerToast" class="toast text-bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      ثبت‌نام با موفقیت انجام شد!
+    </div>
+  </div>
+</div>
+
+
     </form>
   </div>
-
+<!-- اسکریپت نمایش اعلان پس از کلیک -->
+<script>
+  document.getElementById('registerbtn').addEventListener('click', function () {
+    const toastLive = document.getElementById('registerToast');
+    const toast = new bootstrap.Toast(toastLive);
+    toast.show();
+  });
+</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
